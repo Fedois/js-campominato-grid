@@ -1,8 +1,19 @@
-const container = document.getElementById('container');
+alert('per iniziare a giocare clicca su "play"')
+
+const container = document.querySelector('.container');
 console.log(container)
 
 const play = document.querySelector('button')
-
+play.addEventListener('click', function(){
+    
+    if(container.classList.contains('none')){
+        container.classList.remove('none')
+    }
+    else{
+        container.classList.add('none')
+        console.log('cliccato sul numero: ', i)
+    }
+})
 for(let i = 1; i <= 100; i++){
     
     const newSquare = document.createElement('div');

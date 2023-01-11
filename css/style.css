@@ -10,7 +10,7 @@ body{
     width: 100%;
     background-color: black;
 }
-#container, header, footer{
+header, footer{
     background-color: white;
 }
 .container-small{
@@ -26,6 +26,7 @@ header{
 }
 .play > button{
     padding: 2px 20px;
+    font-size: 1.5em;
 }
 
 /* MAIN */
@@ -35,7 +36,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-#container{
+.container{
     height: 70vh;
     width: 70vh;
     display: flex;
@@ -44,7 +45,7 @@ main{
 .square{
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 2px solid black;
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,9 @@ main{
 }
 .click{
     background-color: aqua;
+}
+.none{
+    display: none;
 }
 
 /* FOOTER */
