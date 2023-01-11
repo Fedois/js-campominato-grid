@@ -1,34 +1,41 @@
+/* RESET  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* GENERAL */
 body{
     height: 100vh;
     width: 100%;
     background-color: black;
 }
-/* main{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-.container, header, footer{
+#container, header, footer{
     background-color: white;
 }
-
+.container-small{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+/* HEADER */
 header{
     height: 12vh;
     width: 100%;
+    justify-content: space-between;
 }
+.play > button{
+    padding: 2px 20px;
+}
+
+/* MAIN */
 main{
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container{
+#container{
     height: 70vh;
     width: 70vh;
     display: flex;
@@ -37,11 +44,22 @@ main{
 .square{
     width: calc(100% / 10);
     height: calc(100% / 10);
-    background-color: aqua;
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.square:hover{
+    cursor: pointer;
+}
+.click{
+    background-color: aqua;
 }
 
+/* FOOTER */
 footer{
     height: 8vh;
     width: 100%;
+    font-size: 1.25em;
 }
