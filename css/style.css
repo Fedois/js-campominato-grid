@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+/* main{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.container, header, footer{
+    background-color: white;
+}
+
+header{
+    height: 12vh;
+    width: 100%;
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+footer{
+    height: 8vh;
+    width: 100%;
+}
